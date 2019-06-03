@@ -1,5 +1,7 @@
 /vendor
+/app/ThirdParty/*.zip
+/app/ThirdParty/UtageStats
+/app/ThirdParty/UtageStatsConfig
 /.idea
 Homestead.json
 Homestead.yaml
-.env

@@ -11,6 +11,12 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+$router->get( '/season/{season}/{steamID64}/stats', 'StatsController@index' );
+
+$router->get('/', function () use ( $router ) {
+    return response()->json(
+      [
+        'message'=> 'Welcome to UtageSocial !'
+      ]
+    );
 });
